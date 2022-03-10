@@ -1,0 +1,162 @@
+/* Variables */
+:root {
+    --blue: #0282eb;
+    --gray: rgb(238, 238, 238);
+  }
+
+/* Global */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    min-width: 100vw;
+    min-height: 100vh;
+    background: var(--gray);
+}
+
+.card {
+    background: white;
+    border-radius: 1rem;
+    padding: 4rem;
+}
+
+.footer-ul-li-spacer {
+    color: gray;
+}
+
+/* Text */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: sans-serif;
+    color: black;
+}
+
+/* Header */
+.header {
+    padding: 2rem 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--blue);
+}
+
+.header-title {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+}
+
+.header-title-a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+}
+
+.header-title-a:hover {
+    text-decoration: underline;
+}
+
+.header-nav {}
+
+.header-nav-ul {
+    list-style: none;
+}
+
+.header-nav-ul-li {
+    display: inline;
+}
+
+.header-nav-ul-li-a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+    padding: 0 1rem;
+}
+
+.header-nav-ul-li-a:hover {
+    text-decoration: underline;
+}
+
+/* Main */
+.main {
+    padding: 0 30%;
+    margin: 1rem 0rem;
+}
+
+.main-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    justify-content: center;
+}
+
+.main-intro-text {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.main-intro-text-a {
+    text-decoration: none;
+    color: var(--blue);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.main-intro-text-a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    margin: 1.5rem 0rem;
+    padding: 0 30%;
+}
+
+.footer-ul {
+    list-style: none;
+    text-align: center;
+}
+
+.footer-ul-li {
+    display: inline;
+}
+
+.footer-ul-li-a {
+    text-decoration: none;
+    color: var(--blue);
+    font-size: 1.4rem;
+    padding: 0 1rem;
+}
+
+.footer-ul-li-a:hover {
+    text-decoration: underline;
+}
+
+/* Media */
+
+@media (max-width: 1000px) {
+    .header {
+        padding: 1.5rem 10%;
+    }
+    .main {
+        padding: 0 10%;
+    }
+    .footer {
+        padding: 0 10%;
+    }
+}  
